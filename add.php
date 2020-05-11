@@ -13,11 +13,12 @@
         <br/><br/>
 
         <label>Jenis Kelamin</label><br/>
-        <select name="jenis_kelamin">
-            <option value>="Pria">Pria</option>
-            <option value>="Wanita">Wnita</option>
+        <select name="jk">
+            <option value="Pria">Pria</option>
+            <option value="Wanita">Wnita</option>
         </select>
+        <br>
 
-        </button type="submit">Tambah</button>
+        <button type="submit">Tambah</button>
     </form>
 </html>
