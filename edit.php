@@ -9,7 +9,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 ?>
 
 <html>
-    <form action="insert.php" method="post">
+    <form action="update.php" method="post">
 
         <input type="hidden" name="id" value=<?php echo $result[0]['id']?>> <!--untuk menyimpan id tanpa menampilkan data id pada form-->
 
@@ -26,7 +26,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
         <br/><br/>
 
         <label>Jenis Kelamin</label><br/>
-        <select name="jenis_kelamin">
+        <select name="jk">
             <option value="Pria" <?php echo ($result[0]['jk'] == 'Pria') ? 'selected' : '';?>>Pria</option>
             <option value="Wanita" <?php echo ($result[0]['jk'] == 'Wanita') ? 'selected' : '';?>>Wnita</option>
         </select>

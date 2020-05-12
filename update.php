@@ -7,9 +7,9 @@
     $nama = $_POST['nama']; // Index didalamnya sesuai dengan input name yang ada di form
     $alamat = $_POST['alamat'];
     $umur = $_POST['umur'];
-    $jenis_kelamin = $_POST['jenis_kelamin'];
+    $jk = $_POST['jk'];
 
-    $update = mysqli_query($connect,"UPDATE karyawan SET nama='$nama', alamat='$alamat', umur='$umur', jenis_kelamin='$jenis_kelamin' WHERE id='$id' "); //menggunakan kondisi where untuk menyimpan dengan data spesifik
+    $update = mysqli_query($connect,"UPDATE karyawan SET nama='$nama', alamat='$alamat', umur='$umur', jk='$jk' WHERE id='$id' "); //menggunakan kondisi where untuk menyimpan dengan data spesifik
 
     if($update) 
         header('Location:list.php'); // Jika berhasil akan di arahkan ke halaman list.php
